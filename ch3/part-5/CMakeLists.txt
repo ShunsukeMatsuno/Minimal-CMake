@@ -15,4 +15,6 @@ FetchContent_Declare(
   GIT_TAG d3cf98cf259e85bad0975b8c014598923a37e93e)
 FetchContent_MakeAvailable(timer_lib as-c-math)
 
+set(AS_MATH_ENABLE_TEST OFF)
+
 target_link_libraries(${PROJECT_NAME} PRIVATE timer_lib as-c-math)

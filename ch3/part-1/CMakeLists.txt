@@ -12,3 +12,6 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(timer_lib)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE timer_lib)
+
+include(CmakeHelpers.cmake)
+list_cmake_variables()
